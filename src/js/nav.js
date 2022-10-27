@@ -1,5 +1,8 @@
-export const nav =/*html*/ `
-<nav class="container-fluid">
+import '@picocss/pico'
+import '../css/global.css'
+
+const nav =/*html*/`
+
     <ul>
       <li><a class="contrast" href=" ./index.html">Desenvolvimento Web 1</a></li>
     </ul>
@@ -11,12 +14,13 @@ export const nav =/*html*/ `
           <ul role="listbox">
             <!-- Sub Menu-->
             <li><a class="primary" href="./login.html">Formulário de Acesso</a></li> <!-- Item do submenu-->
-            <li><a class="primary" href="./login.html">Teste</a></li> <!-- Item do submenu-->
+            <li><a class="primary" href="./lista-tarefas.html">lista de tarefas</a></li> <!-- Item do submenu-->
           </ul>
           <!-- fim do Sub Menu-->
         </details>
       </li>
     </ul>
     <!-- Fim do Menu Principal-->
-  </nav>
 `
+const menu = document.querySelector("#menu")
+menu.innerHTML = nav
