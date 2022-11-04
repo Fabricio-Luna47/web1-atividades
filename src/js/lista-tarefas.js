@@ -13,13 +13,13 @@ btnAdicionar.addEventListener('click', function (){
     <div>${descricaoTarefa}</div>
     <button class="btn-excluir">Excluir</button>
     `
-    listaTarefas.appendChild('click'  , function (event) {
-        if (event.taget.className === 'btn-excluir'){
+   li.addEventListener('click', function (event){
+        if (event.target.className === "btn-excluir"){
             listaTarefas.removeChild(li)
 
         }
     
-    
+
 })
 listaTarefas.appendChild(li)
 
